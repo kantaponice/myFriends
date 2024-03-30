@@ -44,13 +44,13 @@ function myFunctionreset() {
     document.getElementById("TypeButton").style.display = "";
     document.querySelector('button').disabled = false;
     document.getElementById("nickNameInputs").innerHTML = "";
-    document.getElementById("totalage").innerHTML = "";
+  
     document.getElementById("sumButton").style.display = "";
     document.getElementById("AButton").style.display = "";
     document.getElementById("minButton").style.display = "";
     document.getElementById("maxButton").style.display = "";
-
-
+    document.getElementById("Number").style.display = "";
+    document.getElementById("totalage").style.display = "";
     document.getElementById("showtotal").style.display = "";
     document.getElementById("showaverage").style.display = "";
     document.getElementById("showNameMin").style.display = "";
@@ -59,8 +59,8 @@ function myFunctionreset() {
     document.getElementById("showNameMax").style.display = "";
     document.getElementById("showNamemax").style.display = "";
     document.getElementById("Maxage").style.display = "";
-    document.getElementById("Number").style.display = "";
-    document.getElementById("result").style.display = "";
+    
+   
 }
 
 
@@ -106,11 +106,11 @@ function myFunctionsum() {
 
         if (name === "" || isNaN(age)) {
             alert("Please fill in all the required information.");
-
+         
             return;
         }else if(age <= 0 ){
             alert("Please enter the correct information.");
-            document.getElementById("showtotal").innerHTML = ""
+        
             return;
         }
 
@@ -122,7 +122,7 @@ function myFunctionsum() {
 }   
 
     document.getElementById("showtotal").style.display = "inline-block";
-    document.getElementById("totalage").innerHTML = totalAge
+    document.getElementById("totalage").innerHTML = totalAge;
     document.getElementById("showaverage").style.display = "";
     document.getElementById("showNameMin").style.display = "";
     document.getElementById("showNamemin").style.display = "";
@@ -150,11 +150,11 @@ function myFunctionaverage() {
 
         if (name === "" || isNaN(age)) {
             alert("Please fill in all the required information.");
-            document.getElementById("showaverage").innerHTML = ""
+        
             return;
         }else if(age <= 0 ){
             alert("Please enter the correct information.");
-            document.getElementById("showaverage").innerHTML = ""
+           
             return;
         }
 
