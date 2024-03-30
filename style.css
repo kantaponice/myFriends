@@ -1,0 +1,135 @@
+
+
+#resetButton {
+ display: none; 
+
+}
+
+
+
+#TypeButton{
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.624);
+}
+    
+#random {
+    display: inline;
+}
+
+#Number {
+    display: none;
+}
+
+#sumButton{
+    margin-top: 10px;
+    display: none;
+}
+
+#AButton{
+    margin-top: 10px;
+    display: none;
+}
+
+#minButton{
+    margin-top: 10px;
+    display: none;
+}
+
+#maxButton{
+    margin-top: 10px;
+    display: none;
+}
+
+
+#showtotal{
+    margin-top: 10px;
+    display: none;
+}
+
+#showaverage{
+    margin-top: 10px;
+    display: none;
+}
+
+#showMin{
+    margin-top: 10px;
+    display: none;
+}
+
+#showMax{
+    margin-top: 10px;
+    display: none;
+}
+
+#showNameMin{
+    margin-top: 10px;
+    display: none;
+}
+
+#showNameMax{
+    margin-top: 10px;
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #616661;
+}
+
+#TypeButton:hover{
+    
+    background-color: rgba(32, 21, 80, 0.624);
+}
+
+
+p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+} 
+
+
+
+

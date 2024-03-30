@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculate Age</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+
+<body>
+    <div class="container">
+<h1> FRIENDS CALCULATE AGE</h1>
+<p>Please Click Start</p>
+
+<button id = "startButton" onclick="myFunctionStart()" >Start</button>
+
+
+<p id="Number"> Number of friends : <a id="random"> </a> </p> 
+
+
+
+
+
+
+<form id="frm">
+    <div id="nickNameInputs"></div>
+
+    <div id="ageInputs"></div>
+</form>
+
+
+<button id = "TypeButton"  onmouseenter="MouseEnter()" onmouseleave="MouseLeave()"  onclick="calClick() ">Type of Calculate</button>
+<button id = "sumButton" onclick="myFunctionsum()">Sum of Age</button>
+<button id = "AButton" onclick="myFunctionaverage()">Average of Age</button>
+<button id = "minButton" onclick="myFunctionmin()">Min of Age</button>
+<button id = "maxButton" onclick="myFunctionmax()">Max of Age</button>
+
+<p id = "showtotal"> The total age of all friends... <a id="totalage"> </a> </p> 
+<p id = "showaverage"> The average age of all friends... <a id="Averageage"> </a> </p> 
+<p id = "showNameMin"> Youngest friend... <a id="showNamemin"> </a> <a id="equal"> </a> <a id="Minage"> </a> </p> 
+<p id = "showNameMax"> Oldest friend... <a id="showNamemax"> </a> <a id="equalM"> </a> <a id="Maxage"> </a> </p> 
+<button id = "resetButton" onclick="myFunctionreset()">Reset</button>
+</div>
+
+
+
+
+
+
+ 
+<script src="logic.js"></script>
+
+</body>
+</html>
