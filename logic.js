@@ -121,15 +121,13 @@ function myFunctionsum() {
     }
 }   
 
-    document.getElementById("showtotal").style.display = "inline-block";
-    document.getElementById("totalage").innerHTML = totalAge;
-    document.getElementById("showaverage").style.display = "";
-    document.getElementById("showNameMin").style.display = "";
-    document.getElementById("showNamemin").style.display = "";
-    document.getElementById("Minage").style.display = "";
-    document.getElementById("showNameMax").style.display = "";
-    document.getElementById("showNamemax").style.display = "";
-    document.getElementById("Maxage").style.display = "";
+
+    document.querySelector("#showtotal").style.display = "inline-block";
+    document.querySelector("#totalage").innerHTML = totalAge;
+    document.querySelector("#showaverage").style.display = "";
+    document.querySelector("#showNameMin").style.display = "";
+    document.querySelector("#showNameMax").style.display = "";
+
 
  
     
@@ -165,18 +163,13 @@ function myFunctionaverage() {
     }
 }
   
-    document.getElementById("showaverage").style.display = "inline-block";
-    document.getElementById("Averageage").innerHTML = totalAge/(inputdata.length/2);
-    document.getElementById("showtotal").style.display = "";
-    document.getElementById("showNameMin").style.display = "";
-    document.getElementById("showNamemin").style.display = "";
-    document.getElementById("Minage").style.display = "";
-    document.getElementById("showNameMax").style.display = "";
-    document.getElementById("showNamemax").style.display = "";
-    document.getElementById("Maxage").style.display = "";
+    document.querySelector("#showaverage").style.display = "inline-block";
+    document.querySelector("#Averageage").innerHTML = totalAge/(inputdata.length/2);
+    document.querySelector("#showtotal").style.display = "";
+    document.querySelector("#showNameMin").style.display = "";
+    document.querySelector("#showNameMax").style.display = "";
+
     
-   
- 
     
 }
 
@@ -212,14 +205,12 @@ if (youngest.length === 1 ) {
 
     document.getElementById("showNameMin").style.display = "inline-block";
     document.getElementById("showNamemin").innerHTML = youngest.join(", ");
-    document.getElementById("equal").innerHTML = "";
-    document.getElementById("Minage").innerHTML = "";
+    document.getElementById("equal").innerHTML = "=> age: ";
+    document.getElementById("Minage").innerHTML = minAge;
 }
     document.getElementById("showtotal").style.display = "";
     document.getElementById("showaverage").style.display = "";
     document.getElementById("showNameMax").style.display = "";
-    document.getElementById("showNamemax").style.display = "";
-    document.getElementById("Maxage").style.display = "";
     
 
 }
@@ -255,15 +246,13 @@ if (oldest.length === 1 ) {
  
     document.getElementById("showNameMax").style.display = "inline-block";
     document.getElementById("showNamemax").innerHTML = oldest.join(", ");
-    document.getElementById("equalM").innerHTML = "";
-    document.getElementById("Maxage").innerHTML = "";
+    document.getElementById("equalM").innerHTML = "=> age: ";
+    document.getElementById("Maxage").innerHTML =  maxAge;
 
 }
     document.getElementById("showtotal").style.display = "";
     document.getElementById("showaverage").style.display = "";
     document.getElementById("showNameMin").style.display = "";
-    document.getElementById("showNamemin").style.display = "";
-    document.getElementById("Minage").style.display = "";
 
 
 }
